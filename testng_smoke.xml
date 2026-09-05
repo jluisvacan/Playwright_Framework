@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" verbose="1" parallel="classes" thread-count="3">
+
+
+    <test name="SmokeTagTests">
+
+        <groups>
+            <run>
+                <include name="smoke"> </include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="tests.FrameworkBuildDataDrivenTest"> </class>
+            <class name="tests.UIValidationsTest"> </class>
+            <class name="tests.UIValidationsContinuedTest"> </class>
+        </classes>
+    </test>
+
+
+</suite>
