@@ -32,6 +32,8 @@ build/
 
 ### VS Code ###
 .vscode/
+*.zip
+*.png
 
 ### Mac OS ###
 .DS_Store
