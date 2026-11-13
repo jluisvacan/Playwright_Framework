@@ -11,6 +11,7 @@ import pages.*;
 import java.io.IOException;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import static utils.Date.getNextDay;
 
 public class FrameworkBuildTest extends BaseTest{
 
@@ -18,6 +19,7 @@ public class FrameworkBuildTest extends BaseTest{
     public void demoTest() throws IOException {
 
         String eventTitle = "Test QA";
+
 
         LoginPage loginPage = new LoginPage(page, base_url);
 
@@ -34,7 +36,7 @@ public class FrameworkBuildTest extends BaseTest{
                 "Sports",
                 "QA Summit Example: City",
                 "QA Summit Example: Venue",
-                "2026-10-31T18:20",
+                getNextDay(),
                 "250.74",
                 "210"
 
